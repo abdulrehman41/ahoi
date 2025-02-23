@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Fonts -->
+
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- End -->
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="max-w-[1440px] m-auto bg-white">
+    <header>
+      <nav class="z-10 w-full absolute">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+          <div
+            class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative"
+          >
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              name="toggle_nav"
+              id="toggle_nav"
+              class="hidden peer"
+            />
+            <div
+              class="relative z-20 w-full flex justify-between lg:w-max md:px-0"
+            >
+              <a
+                href="#home"
+                aria-label="logo"
+                class="flex space-x-2 items-center"
+              >
+                <div aria-hidden="true" class="flex space-x-1"></div>
+                <img
+                  src="/assets/images/ahoilogo2.png"
+                  alt="logo"
+                  class="w-[90px] h-[45px]"
+                />
+              </a>
+
+              <div class="relative flex items-center lg:hidden max-h-10">
+                <label
+                  role="button"
+                  for="toggle_nav"
+                  aria-label="humburger"
+                  id="hamburger"
+                  class="relative p-6 -mr-6 cursor-pointer"
+                >
+                  <div
+                    aria-hidden="true"
+                    id="line"
+                    class="m-auto h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"
+                  ></div>
+                  <div
+                    aria-hidden="true"
+                    id="line2"
+                    class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"
+                  ></div>
+                </label>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="fixed z-10 inset-0 h-screen w-screen bg-white/70 backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden dark:bg-gray-900/70"
+            ></div>
+            <div
+              class="flex-col z-20 flex-wrap gap-6 p-8 rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10 justify-end w-full invisible opacity-0 translate-y-1 absolute top-full left-0 transition-all duration-300 scale-95 origin-top lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none dark:shadow-none dark:bg-gray-800 dark:border-gray-700"
+            >
+              <div
+                class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0"
+              >
+                <ul
+                  class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0"
+                >
+                  <li>
+                    <a
+                      href="#features"
+                      class="block md:px-4 transition hover:text-[#9333EA]"
+                    >
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#solution"
+                      class="block md:px-4 transition hover:text-[#9333EA]"
+                    >
+                      <span>Services</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#testimonials"
+                      class="block md:px-4 transition hover:text-[#9333EA]"
+                    >
+                      <span>About</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#blog"
+                      class="block md:px-4 transition hover:text-[#9333EA]"
+                    >
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#blog"
+                      class="block md:px-4 transition hover:text-[#9333EA]"
+                    >
+                      <span>Privacy</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- <button class="px-6 py-3 text-white font-semibold rounded-lg bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] hover:from-[#122186] hover:via-[#0f3b93] hover:to-[#058abb] transition-all duration-300">
+                Click Me
+              </button> -->
+
+              <div class="mt-12 lg:mt-0">
+                <a
+                  href="#"
+                  class="relative bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] hover:from-[#122186] hover:via-[#0f3b93] hover:to-[#058abb] transition-all duration-300 flex h-9 w-full items-center justify-center px-4 rounded-[20px]"
+                >
+                  <span class="relative text-sm font-semibold text-white"
+                    >Get Started</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="relative overflow-hidden mb-5" id="home">
+      <div
+        aria-hidden="true"
+        class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+      >
+        <div
+          class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"
+        ></div>
+        <div
+          class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+        <div class="relative pt-36 ml-auto">
+          <div class="lg:w-2/3 text-center mx-auto">
+            <h1
+              class="text-gray-900 dark:text-white font-bold text-4xl sm:text-5xl md:text-6xl xl:text-7xl"
+            >
+              Next Generation Communication
+              <span
+                class="bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+                >platform.</span
+              >
+            </h1>
+            <p class="mt-8 text-gray-700 dark:text-gray-300">
+              Powering Communication, Simplifying Connections
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-y-4 gap-x-6">
+              <a
+                href="#"
+                class="relative bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] hover:from-[#122186] hover:via-[#0f3b93] hover:to-[#058abb] transition-all duration-300 flex h-11 w-full items-center justify-center px-6 sm:w-max rounded-[20px]"
+              >
+                <span class="relative text-base font-semibold text-white"
+                  >Get started</span
+                >
+              </a>
+            </div>
+            <div
+              class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between"
+            >
+              <div class="text-left">
+                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+                  The lowest price
+                </h6>
+                <p class="mt-2 text-gray-500">Some text here</p>
+              </div>
+              <div class="text-left">
+                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+                  The fastest on the market
+                </h6>
+                <p class="mt-2 text-gray-500">Some text here</p>
+              </div>
+              <div class="text-left">
+                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+                  The most loved
+                </h6>
+                <p class="mt-2 text-gray-500">Some text here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-gray-200 flex justify-center items-center min-h-screen">
+      <div
+        class="bg-white rounded-lg m-5 shadow-lg flex flex-col md:flex-row items-center max-w-3xl p-10 lg:mx-auto w-full md:w-auto"
+      >
+        <div class="relative w-60 h-60 md:w-72 md:h-72 flex-shrink-0">
+          <img
+            src="assets/images/guyphone3.png"
+            alt="Profile"
+            class="w-full h-full object-cover rounded-full border-4 border-gray-100 shadow-md"
+          />
+        </div>
+        <div
+          class="md:ml-8 text-center md:text-left mt-6 md:mt-0 w-full md:w-auto"
+        >
+          <div class="text-center py-5">
+            <span
+              class="font-bold text-3xl md:text-4xl xl:text-5xl bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+              >About Ahoi.</span
+            >
+            <p class="text-gray-600 !font-extrabold">
+              "Ahoi!" - Alexander Graham Bell
+            </p>
+          </div>
+          <p class="text-gray-600 mt-2 text-sm md:text-base">
+            Alexander Graham Bell once envisioned that "Ahoi!" would be the
+            standard greeting when answering the phone. Inspired by the merging
+            of the Internet and telephone technology, the founders of Ahoi
+            developed the first communication APIs in the early 2000s. Their
+            pioneering work laid the foundation for modern communication tools,
+            and they went on to hold leadership roles at major companies in the
+            industry.
+          </p>
+          <p class="text-gray-600 mt-2 text-sm md:text-base">
+            Our people didn’t just innovate technology—they fostered a culture
+            of innovation that has shaped the communication landscape. The
+            company's commitment to pushing boundaries and embracing
+            forward-thinking ideas has cemented its reputation as a trailblazer,
+            continuously inspiring others to build the next generation of
+            groundbreaking solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="w-full">
+      <div class="my-10 px-6">
+        <div class="text-center py-5">
+          <span
+            class="font-bold text-4xl sm:text-5xl md:text-6xl xl:text-7xl bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+            >features.</span
+          >
+          <p class="mt-6 text-gray-600">
+            Here are just some of the 100s of features our system provides:
+          </p>
+        </div>
+
+        <div class="w-full mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-hash text-[#ffbb2c] text-3xl"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Global Phone Numbers
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi provides global phone numbers that allow businesses to
+              establish a local presence anywhere in the world. With Ahoi, you
+              can purchase, manage, and integrate phone numbers for voice and
+              SMS communication, helping you connect with customers worldwide.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-envelope text-3xl" style="color: #5578ff"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Global Messaging
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi offers global messaging solutions that enable businesses to
+              send and receive SMS, MMS, and chat messages from anywhere. With
+              reliable and scalable APIs, Ahoi ensures seamless communication
+              with your customers, supporting campaigns and notifications in
+              real-time.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-hdd-stack text-3xl" style="color: #e80368"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Virtual Machines
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi's Virtual Machines provide powerful, flexible, and secure
+              computing resources. Whether you need infrastructure for hosting
+              applications or processing large amounts of data, Ahoi's VMs are
+              designed to scale with your business needs, offering high
+              availability and performance.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i
+                  class="bi bi-window-dock text-3xl"
+                  style="color: #e361ff"
+                ></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Visual Designer
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi's Visual Designer allows users to create communication
+              workflows with a simple drag-and-drop interface. Without needing
+              to write code, businesses can build automated call flows, SMS
+              sequences, and customer interactions, streamlining their
+              communication processes.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-shuffle text-3xl" style="color: #47aeff"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  White Label
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi offers White Label solutions that allow businesses to rebrand
+              and resell Ahoi's communication services under their own brand.
+              From SMS and voice services to full API access, Ahoi provides the
+              backend infrastructure, while you manage the customer-facing
+              experience.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-hdd text-3xl" style="color: #ffa76e"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Storage
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi provides secure and scalable cloud storage, ensuring your
+              data is always accessible and protected. Whether for storing voice
+              recordings, messages, or application data, Ahoi's storage
+              solutions are optimized for seamless integration with your
+              communication services.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i
+                  class="bi bi-telephone-minus text-3xl"
+                  style="color: #11dbcf"
+                ></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Web RTC
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi leverages WebRTC technology to enable real-time communication
+              through voice and video directly in the browser. With Ahoi's
+              WebRTC solutions, you can integrate high-quality video calls, live
+              chat, and real-time collaboration tools into your applications.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-phone text-3xl" style="color: #4233ff"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Soft Phone app
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi's Softphone App allows businesses to make and receive calls
+              over the internet without traditional phone hardware. With support
+              for voice, SMS, and chat, Ahoi's softphone solution is perfect for
+              remote teams and businesses that need flexible communication
+              tools.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-telephone text-3xl" style="color: #b2904f"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  SIP Phones
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi provides full support for SIP phones, enabling businesses to
+              deploy voice-over-IP services using the latest SIP technology.
+              With Ahoi, you can manage multiple SIP devices for efficient,
+              cost-effective communication.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-chat text-3xl" style="color: #b20969"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  SMS Chat Client
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi's SMS Chat Client lets businesses engage in two-way messaging
+              with customers through SMS. The platform allows seamless real-time
+              communication, helping businesses respond quickly to inquiries and
+              automate customer support workflows.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i
+                  class="bi bi-envelope-check text-3xl"
+                  style="color: #ff5828"
+                ></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  SMS Bulk Sending
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi's Bulk Sending service enables businesses to send high-volume
+              text messages with ease. Whether for marketing campaigns, alerts,
+              or notifications, Ahoi offers reliable, scalable infrastructure to
+              ensure your messages reach your audience quickly and securely.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-printer text-3xl" style="color: #29cc61"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Fax Services
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi provides Fax Services that bring traditional faxing into the
+              digital age. Businesses can send and receive faxes through the
+              cloud, integrating this capability into their communication
+              workflows without the need for fax machines. Have a real Fax
+              Machine? We offer Fax ATAs that provide 100% reliability for the
+              standard Fax machine.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-voicemail text-3xl" style="color: #b20969"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Voice Mail
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi's Voicemail service ensures that no call goes unanswered.
+              With customizable greetings and message storage, Ahoi provides
+              businesses with an easy way to manage voicemails and ensure
+              consistent customer communication.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-regex text-3xl" style="color: #ffbb2c"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Advance Call Flow
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi's dvanced Call Flows enable businesses to design and manage
+              sophisticated call routing paths. From IVRs to automated call
+              handling, Ahoi's call flow tools ensure that your customers are
+              directed to the right place every time.
+            </p>
+          </div>
+
+          <div
+            class="w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-wallet text-3xl" style="color: #e361ff"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  MultiLevel Billing
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi offers MultiLevel Billing solutions that allow businesses to
+              manage and automate billing processes across multiple tiers. This
+              is especially useful for resellers and white-label partners who
+              need flexible billing configurations.
+            </p>
+          </div>
+
+          <div
+            class="lg:hidden w-auto h-[80px] min-w-[280px] hover:bg-gradient-to-br from-cyan-200 to-purple-300 dark:from-blue-700 card cursor-pointer bg-white border border-gray-200 shadow-2xl rounded-lg px-5 py-5 flex flex-col justify-center items-start gap-3 transition-all duration-300"
+          >
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center items-center gap-2">
+                <i class="bi bi-mic text-3xl" style="color: #47aeff"></i>
+                <p
+                  class="font-bold text-black-800 !font-bold text-nowrap flex-1 text-center"
+                >
+                  Call Recording
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-gray-400 text-lg transition-transform duration-300"
+              ></i>
+            </div>
+            <p class="detail hidden text-gray-600 text-sm">
+              Ahoi provides Call Recording services that allow businesses to
+              capture and store voice calls for quality assurance, training, and
+              compliance purposes. With Ahoi, recordings are stored securely and
+              accessible via the cloud.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Features section -->
+
+    <!-- Services -->
+    <section class="mb-10">
+      <div class="pt-10">
+        <div class="mx-auto px-6 max-w-6xl">
+          <div class="text-center">
+            <span
+              class="font-bold text-4xl sm:text-5xl md:text-6xl xl:text-7xl bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+              >services.</span
+            >
+            <p class="mt-6 text-gray-600">
+              We specialize in cutting-edge communication services, delivering
+              tailored telecommunication solutions to meet our clients' needs.
+            </p>
+          </div>
+          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] blur-2xl opacity-25"
+              ></div>
+
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-[#058abb] bg-white shadow"
+                >
+                  <i
+                    class="bi bi-envelope hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">Messaging</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Our Messaging Services provide comprehensive, flexible, and
+                    highly scalable solutions designed to meet the growing
+                    businesses.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-cyan-400 to-[#096bac] to-sky-300 dark:to-indigo-600 blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-cyan-400 bg-white shadow"
+                >
+                  <i
+                    class="bi bi-phone-vibrate hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">Voice</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Enhance your business communication with our advanced Voice
+                    Services, designed to offer crystal-clear call quality and
+                    reliability.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-[#058abb] bg-white shadow"
+                >
+                  <i
+                    class="bi bi-telephone-inbound hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">Phone Numbers</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Manage and provision phone numbers with ease through our
+                    highly flexible and global-ready platform. Whether you need
+                    local numbers.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-cyan-400 to-[#096bac] to-sky-300 dark:to-indigo-600 blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-cyan-400 bg-white shadow"
+                >
+                  <i
+                    class="bi bi-wifi hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">Api Driven</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Our robust API Gateway serves as the backbone for
+                    integrating communication functionalities into your
+                    applications.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-[#058abb] bg-white shadow"
+                >
+                  <i
+                    class="bi bi-share hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-lg md:text-2xl mt-6 cursor-pointer">Visuall Designer</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Our robust API Gateway serves as the backbone for
+                    integrating communication functionalities into your
+                    applications.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-cyan-400 to-[#096bac] to-sky-300 dark:to-indigo-600 blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-cyan-400 bg-white shadow"
+                >
+                  <i
+                    class="bi bi-hdd-network hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">Cloud Compute</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Our Cloud Compute platform is designed to provide
+                    high-performance, scalable infrastructure for businesses.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-[#058abb] bg-white shadow"
+                >
+                  <i
+                    class="bi bi-calendar4-week hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">White Label</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Our White Label solutions allow businesses to rebrand and
+                    resell communication services.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-cyan-400 to-[#096bac] to-sky-300 dark:to-indigo-600 blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-cyan-400 bg-white shadow"
+                >
+                  <i
+                    class="bi bi-cloud hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">
+                  Software as a Service
+                </h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    Our Software as a Service (SaaS) offerings provide
+                    businesses with ready-to-use communication.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden border-gray-100 rounded-[20px] p-6 shadow-lg"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 transition duration-300 bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] blur-2xl opacity-25"
+              ></div>
+              <div class="relative">
+                <div
+                  class="flex justify-center items-center w-12 h-12 border-gray-100 rounded-full hover:bg-[#058abb] bg-white shadow"
+                >
+                  <i
+                    class="bi bi-printer hover:text-white text-[#058abb] text-3xl"
+                  ></i>
+                </div>
+
+                <h4 class="text-lg md:text-2xl mt-6 cursor-pointer">Fax & Devices</h4>
+
+                <div class="mt-6 pb-6">
+                  <p class="text-gray-700">
+                    At Ahoi, we provide robust fax solutions that integrate
+                    seamlessly with your VoIP system.
+                  </p>
+                </div>
+
+                <div class="flex gap-3 py-4 border-t border-gray-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 border-gray-200 border-[1px] rounded-md px-4 py-2 text-gray-900 hover:bg-gray-100 transition"
+                  >
+                    <span>Read More</span>
+
+                    <!-- Default Down Arrow -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 block group-hover:hidden"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m17 13l-5 5m0 0l-5-5m5 5V6"
+                      />
+                    </svg>
+
+                    <!-- Right Arrow (Visible on Hover) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      class="w-5 h-5 hidden group-hover:block"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m10 17l5-5m0 0l-5-5m5 5H6"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Statistics Section -->
+    <section class="w-full bg-white px-5 md:px-10 lg:px-20 py-10 max-w-5xl m-auto">
+      <div class="mt-12 grid md:grid-cols-2 gap-10">
+        <div
+          class="w-auto flex flex-col justify-center items-center gap-2 p-6 border border-gray-200 rounded-lg shadow-xl"
+        >
+          <i
+            class="bi bi-emoji-smile flex-shrink-0 text-5xl text-[#3498db]"
+          ></i>
+
+          <h5
+            class="font-extrabold !bg-gradient-to-r !from-[#058abb] !via-[#0c529f] !to-[#096bac] !text-transparent !bg-clip-text !dark:text-white mb-2 text-3xl md:text-4xl lg:text-5xl !m-0"
+          >
+            3000
+          </h5>
+          <p
+            class="!m-0 mb-3 font-normal font-bold text-lg bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+          >
+            <strong>Thousands of Connections</strong> on platform
+          </p>
+        </div>
+
+        <div
+          class="w-auto flex flex-col justify-center items-center gap-2 p-6 border border-gray-200 rounded-lg shadow-xl"
+        >
+          <i class="bi bi-envelope flex-shrink-0 text-5xl text-[#3498db]"></i>
+
+          <h5
+            class="font-extrabold !bg-gradient-to-r !from-[#058abb] !via-[#0c529f] !to-[#096bac] !text-transparent !bg-clip-text !dark:text-white mb-2 text-3xl md:text-4xl lg:text-5xl !m-0"
+          >
+            1000000000
+          </h5>
+          <p
+            class="!m-0 mb-3 font-normal font-bold text-lg bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+          >
+            <strong>Billions</strong> of calls processed
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 gap-10">
+        <div
+          class="w-auto flex flex-col justify-center items-center gap-2 p-6 border border-gray-200 rounded-lg shadow-xl"
+        >
+          <i
+            class="bi bi-telephone-inbound flex-shrink-0 text-5xl text-[#3498db]"
+          ></i>
+          <h5
+            class="font-extrabold !bg-gradient-to-r !from-[#058abb] !via-[#0c529f] !to-[#096bac] !text-transparent !bg-clip-text !dark:text-white mb-2 text-3xl md:text-4xl lg:text-5xl !m-0"
+          >
+            1000000
+          </h5>
+          <p
+            class="!m-0 mb-3 font-normal font-bold text-lg bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+          >
+            <strong>Over one million numbers</strong> routing
+          </p>
+        </div>
+
+        <div
+          class="w-auto flex flex-col justify-center items-center gap-2 p-6 border border-gray-200 rounded-lg shadow-xl"
+        >
+          <i class="bi bi-people flex-shrink-0 text-5xl text-[#3498db]"></i>
+          <h5
+            class="font-extrabold !bg-gradient-to-r !from-[#058abb] !via-[#0c529f] !to-[#096bac] !text-transparent !bg-clip-text !dark:text-white mb-2 text-3xl md:text-4xl lg:text-5xl !m-0"
+          >
+            2000
+          </h5>
+          <p
+            class="!m-0 mb-3 font-normal font-bold text-lg bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+          >
+            <strong>Thousands of</strong> end user devices
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Statistics Section -->
+
+    <!-- Pricing section -->
+    <section id="pricing" class="m-auto py-10 px-5">
+      <div class="max-w-6xl m-auto">
+        <div class="text-center mb-10">
+          <span
+            class="font-bold text-4xl sm:text-5xl md:text-6xl xl:text-7xl bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+            >pricing.</span
+          >
+          <p class="mt-6 text-gray-600">
+            Competitive, transparent pricing tailored to your needs ensures
+            value for every budget, without compromising on quality or service
+            excellence.
+          </p>
+        </div>
+
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10"
+        >
+          <div
+            class="animate-on-scroll border border-4 border-gray-100 bg-white p-8 rounded-lg min-h-[300px] shadow-2xl"
+          >
+            <div class="flex items-center gap-2 mb-5">
+              <div
+                class="w-[54px] h-[54px] bg-[#ECEBFF] rounded-lg flex items-center justify-center"
+              >
+                <div class="relative w-[36px] h-[36px]">
+                  <div
+                    class="absolute w-[18px] h-[36px] bg-[#4A3AFF] rounded-l-full"
+                  ></div>
+                  <div
+                    class="absolute right-0 w-[18px] h-[36px] bg-[#B8B1FF] rounded-r-full"
+                  ></div>
+                </div>
+              </div>
+              <h3 class="font-normal text text-lg md:text-2xl !m-0">Phone Numbers</h3>
+            </div>
+            <div class="w-full relative">
+              <span
+                class="default-font text font-bold absolute top-[10px] left-0"
+                >$</span
+              >
+              <span
+                class="!bg-gradient-to-r !from-[#058abb] !via-[#0c529f] !to-[#096bac] !text-transparent !bg-clip-text !dark:text-white mb-2 text-[56px] mb-2 !m-0"
+                >.35</span
+              >
+              <span class="default-font text">/ month</span>
+            </div>
+            <div>
+              <div class="flex flex-col gap-5 mt-5">
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Global Coverage</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Instant Provisioning</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Enhanced Call Features</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Lower with Volume</p>
+                </div>
+              </div>
+              <div class="mt-6">
+                <a
+                  href="#"
+                  class="relative bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] hover:from-[#122186] hover:via-[#0f3b93] hover:to-[#058abb] transition-all duration-300 flex h-9 w-full items-center justify-center px-4 rounded-[20px]"
+                >
+                  <span class="relative text-sm font-semibold text-white"
+                    >Signup Today</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="animate-on-scroll border border-4 border-gray-100 bg-white p-8 rounded-lg min-h-[300px] shadow-2xl"
+          >
+            <div class="flex gap-2 mb-5 items-center">
+              <div
+                class="w-[54px] h-[54px] bg-[#ECEBFF] flex justify-center items-center rounded-lg"
+              >
+                <div class="relative w-[32px] h-[32px] rounded-lg">
+                  <div class="absolute left-0 w-1/2 h-full bg-[#4A3AFF]"></div>
+                  <div class="absolute right-0 w-1/2 h-1/2 bg-[#B8B1FF]"></div>
+                  <div
+                    class="absolute right-0 bottom-0 w-1/2 h-1/2 bg-[#DCD8FF]"
+                  ></div>
+                </div>
+              </div>
+              <h3 class="font-normal text-lg md:text text-2xl !m-0">Messaging</h3>
+            </div>
+            <div class="w-full relative">
+              <span
+                class="default-font text font-bold absolute top-[10px] left-0"
+                >$</span
+              >
+              <span
+                class="!bg-gradient-to-r !from-[#058abb] !via-[#0c529f] !to-[#096bac] !text-transparent !bg-clip-text !dark:text-white mb-2 text-[56px] mb-2 !m-0"
+                >.005</span
+              >
+              <span class="default-font text">/ month</span>
+            </div>
+            <div>
+              <div class="flex flex-col gap-5 mt-5">
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Local USA/Canada</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Nationwide Toll Free</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">National Shortcode</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Lower with Volume</p>
+                </div>
+              </div>
+              <div class="mt-6">
+                <a
+                  href="#"
+                  class="relative bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] hover:from-[#122186] hover:via-[#0f3b93] hover:to-[#058abb] transition-all duration-300 flex h-9 w-full items-center justify-center px-4 rounded-[20px]"
+                >
+                  <span class="relative text-sm font-semibold text-white"
+                    >Signup Today</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="animate-on-scroll border border-4 border-gray-100 bg-white p-8 rounded-lg min-h-[300px] shadow-2xl"
+          >
+            <div class="flex gap-2 mb-5 items-center">
+              <div
+                class="p-2 w-[60px] h-[60px] bg-[#ECEBFF] rounded-lg flex items-center justify-center"
+              >
+                <div class="relative w-[32px] h-[32px]">
+                  <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[30px] h-[30px] rotate-45 bg-gradient-to-r from-[#4A3AFF] to-[#B8B1FF]"
+                  ></div>
+                </div>
+              </div>
+              <h3 class="font-normal text text-lg md:text-2xl !m-0">Outgoing Calls</h3>
+            </div>
+
+            <div class="w-full relative">
+              <span
+                class="default-font text font-bold absolute top-[10px] left-0"
+                >$</span
+              >
+              <span
+                class="!bg-gradient-to-r !from-[#058abb] !via-[#0c529f] !to-[#096bac] !text-transparent !bg-clip-text !dark:text-white mb-2 text-[56px] mb-2 !m-0"
+                >.008</span
+              >
+              <span class="default-font text">/ month</span>
+            </div>
+            <div>
+              <div class="flex flex-col gap-5 mt-5">
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Global Coverage</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">STIR/Shaken Signed</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">High Call Completion</p>
+                </div>
+
+                <div class="flex gap-5">
+                  <i
+                    class="fa-solid fa-circle-check text-[#4A3AFF] text-xl"
+                  ></i>
+                  <p class="default-font text">Lower with Volume</p>
+                </div>
+              </div>
+              <div class="mt-6">
+                <a
+                  href="#"
+                  class="relative bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] hover:from-[#122186] hover:via-[#0f3b93] hover:to-[#058abb] transition-all duration-300 flex h-9 w-full items-center justify-center px-4 rounded-[20px]"
+                >
+                  <span class="relative text-sm font-semibold text-white"
+                    >Signup Today</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End pricing section -->
+
+    <!-- FAQ's Section -->
+    <section class="max-w-6xl m-auto p-10">
+      <div class="block md:flex gap-5">
+        <div class="text-center mb-10">
+          <span
+            class="font-bold text-2xl sm:text-5xl md:text-6xl bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+            ><span class="!text-gray-500">frequently Asked</span
+            >&nbsp;Questions.</span
+          >
+          <p class="mt-6 text-xl text-gray-600">
+            Essential FAQs: Your Questions About Ahoi Answered
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <!-- FAQ Item 1 -->
+          <div
+            class="w-full border border-gray-200 rounded-lg bg-white shadow-2xl"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-left focus:outline-none toggle-btn"
+            >
+              <div class="flex justify-between items-center gap-2">
+                <span
+                  class="bg-[#4A3AFF] text-white w-[24px] h-[24px] flex justify-center items-center rounded-[50%] p-2 text-[12px]"
+                  >1</span
+                >
+                <span class="text-lg">What services does Ahoi offer?</span>
+              </div>
+              <div class="w-10 h-10 flex justify-center items-center">
+                <i class="fa-solid fa-angle-up icon text-lg"></i>
+              </div>
+            </button>
+            <div
+              class="faq-content overflow-hidden transition-all duration-300 text-gray-500"
+            >
+              <p class="p-4 text-left">
+                Ahoi provides a comprehensive suite of communication solutions,
+                including SMS, voice, video, and API services, designed to meet
+                diverse business needs globally.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="w-full border border-gray-200 rounded-lg bg-white shadow-2xl"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-left focus:outline-none toggle-btn"
+            >
+              <div class="flex justify-between items-center gap-2">
+                <span
+                  class="bg-[#4A3AFF] text-white w-[24px] h-[24px] flex justify-center items-center rounded-[50%] p-2 text-[12px]"
+                  >2</span
+                >
+                <span class="text-lg">How does Ahoi ensure reliability?</span>
+              </div>
+              <div class="w-10 h-10 flex justify-center items-center">
+                <i class="fa-solid fa-angle-down icon text-lg"></i>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 text-gray-500"
+            >
+              <p class="p-4 text-left">
+                Leveraging state-of-the-art infrastructure and redundancy, Ahoi
+                guarantees high availability and reliable connectivity for all
+                your communication requirements.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="w-full border border-gray-200 rounded-lg bg-white shadow-2xl"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-left focus:outline-none toggle-btn"
+            >
+              <div class="flex justify-between items-center gap-2">
+                <span
+                  class="bg-[#4A3AFF] text-white w-[24px] h-[24px] flex justify-center items-center rounded-[50%] p-2 text-[12px]"
+                  >3</span
+                >
+                <span class="text-lg"
+                  >Can I integrate Ahoi with existing systems?</span
+                >
+              </div>
+              <div class="w-10 h-10 flex justify-center items-center">
+                <i class="fa-solid fa-angle-down icon text-lg"></i>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 text-gray-500"
+            >
+              <p class="p-4 text-left">
+                Yes, Ahoi's flexible APIs allow for seamless integration with
+                your current business applications, enhancing functionality
+                without disrupting your operations.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="w-full border border-gray-200 rounded-lg bg-white shadow-2xl"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-left focus:outline-none toggle-btn"
+            >
+              <div class="flex justify-between items-center gap-2">
+                <span
+                  class="bg-[#4A3AFF] text-white w-[24px] h-[24px] flex justify-center items-center rounded-[50%] p-2 text-[12px]"
+                  >4</span
+                >
+                <span class="text-lg"
+                  >What support options does Ahoi provide?</span
+                >
+              </div>
+
+              <div class="w-10 h-10 flex justify-center items-center">
+                <i class="fa-solid fa-angle-down icon text-lg"></i>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 text-gray-500"
+            >
+              <p class="p-4 text-left">
+                Ahoi offers 24/7 customer support through various channels,
+                including live chat, email, and phone, ensuring you have
+                assistance whenever needed.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div
+            class="w-full border border-gray-200 rounded-lg bg-white shadow-2xl"
+          >
+            <button
+              class="w-full flex justify-between items-center p-4 text-left focus:outline-none toggle-btn"
+            >
+              <div class="flex justify-between items-center gap-2">
+                <span
+                  class="bg-[#4A3AFF] text-white w-[24px] h-[24px] flex justify-center items-center rounded-[50%] p-2 text-[12px]"
+                  >5</span
+                >
+                <span class="text-lg"
+                  >How does Ahoi handle security and privacy?</span
+                >
+              </div>
+
+              <div class="w-10 h-10 flex justify-center items-center">
+                <i class="fa-solid fa-angle-down icon text-lg"></i>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 text-gray-500"
+            >
+              <p class="p-4 text-left">
+                With robust encryption and compliance measures, Ahoi prioritizes
+                the security and privacy of your communications, safeguarding
+                data integrity and confidentiality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End FAQ's Section -->
+
+    <!-- Contact Section  -->
+    <section class="w-full m-auto p-10">
+      <div class="text-center mb-10">
+        <span
+          class="font-bold text-5xl md:text-6xl bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] text-transparent bg-clip-text dark:text-white"
+          >contact Us.</span
+        >
+        <p class="mt-6 text-gray-600">
+          Reach out with any queries or feedback—our team is here to support you
+          every step of the way, ensuring a seamless experience.
+        </p>
+      </div>
+      <div
+        class="animate-on-scroll grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[1140px] m-auto"
+      >
+        <div
+          class="p-12 bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] flex flex-col gap-5 md:gap-10 rounded-lg"
+        >
+          <div class="flex flex-col">
+            <h3 class="text-3xl sm:text-4xl mb-5 !text-white font-medium">Contact Info</h3>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div
+              class="border border-gray-200 bg-[#4A3AFF] shadow-2xl w-[60px] h-[60px] rounded-[50%] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-location text-2xl !text-white"></i>
+            </div>
+            <div class="w-full">
+              <h4 class="!text-white text-lg font-extrabold">Our Location</h4>
+              <p class="text default-font text-wrap text-base !text-white">
+                1605 Park Street, Castle Rock, CO 80109
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div
+              class="border border-gray-200 bg-[#4A3AFF] shadow-2xl w-[60px] h-[60px] rounded-[50%] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-phone text-2xl !text-white"></i>
+            </div>
+            <div class="w-full">
+              <h4 class="!text-white text-lg font-extrabold">Call Us</h4>
+              <p class="text default-font text-base !text-white">
+                +1-303-500-0999
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div
+              class="border border-gray-200 bg-[#4A3AFF] shadow-2xl w-[60px] h-[60px] rounded-[50%] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-envelope text-2xl !text-white"></i>
+            </div>
+            <div class="w-full">
+              <h4 class="!text-white text-lg font-extrabold">Email Address</h4>
+              <p class="text default-font text-base !text-white">
+                sales@ahoi.net
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-2 flex flex-col justify-center items-center p-12 bg-[url('/assets/images/contact-bg.png')] bg-cover border 
+          border-gray-100 flex flex-col gap-10 rounded-lg"
+        >
+          <!-- Dark Overlay -->
+          <div class="flex flex-col">
+            <h3 class="text-3xl sm:text-4xl !secondary-color font-medium">
+              Get In Touch
+            </h3>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <form class="w-full max-w-lg">
+              <div
+                class="flex flex-col w-full gap-4 md:flex-row space-x-4 mb-4"
+              >
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-full bg-white md:w-1/2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="w-full bg-white md:w-1/2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                class="w-full bg-white p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <textarea
+                placeholder="Message"
+                rows="5"
+                class="w-full bg-white p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              ></textarea>
+              <div class="w-full mt-5">
+                <a
+                  href="#"
+                  class="relative bg-gradient-to-r from-[#058abb] via-[#0c529f] to-[#096bac] hover:from-[#122186] hover:via-[#0f3b93] hover:to-[#058abb] transition-all duration-300 flex h-9 w-full items-center justify-center px-4 rounded-[20px]"
+                >
+                  <span class="relative text-sm font-semibold text-white"
+                    >Submit</span
+                  >
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+    
+    <!-- Footer -->
+    <footer class="max-w-[1440px] py-5 shadow-2xl shadow-[0_-4px_10px_rgba(0,0,0,0.1)] mx-auto flex justify-center items-center  px-6 md:px-12 xl:px-6">
+      <div class="w-full flex flex-col gap-1">
+        <p class="text-center text-sm">©Copyright <a href="#" class="font-bold">ahoi llc</a> All Rights Reserved</p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
+          <a class="!text-[12px] !font-normal cursor-pointer underline">Privacy Policy - Term and Conditions</a>
+          <a class="!text-[12px] !font-normal cursor-pointer underline">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script>
+      document.querySelectorAll(".toggle-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+          const content = this.nextElementSibling;
+          const icon = this.querySelector(".icon");
+
+          if (content.classList.contains("max-h-0")) {
+            content.classList.remove("max-h-0");
+            content.classList.add("max-h-auto");
+            icon.classList.replace("fa-angle-down", "fa-angle-up");
+          } else {
+            content.classList.remove("max-h-auto");
+            content.classList.add("max-h-0");
+            icon.classList.replace("fa-angle-up", "fa-angle-down");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          const detail = this.querySelector(".detail");
+          const arrow = this.querySelector(".fa-arrow-right");
+
+          // Show details
+          detail.classList.remove("hidden");
+
+          // Rotate arrow and change color
+          arrow.classList.add("rotate-90", "!text-[#058abb]");
+          this.classList.remove("h-[80px]");
+          this.classList.add("h-auto", "py-8");
+        });
+
+        card.addEventListener("mouseleave", function () {
+          const detail = this.querySelector(".detail");
+          const arrow = this.querySelector(".fa-arrow-right");
+
+          // Hide details
+          detail.classList.add("hidden");
+
+          // Reset arrow rotation and color
+          arrow.classList.remove("rotate-90", "!text-[#058abb]");
+          this.classList.remove("h-auto");
+          this.classList.add("h-[80px]", "py-8");
+        });
+      });
+    </script>
+  </body>
+</html>
